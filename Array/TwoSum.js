@@ -43,9 +43,9 @@ var twoSum = function(nums, target) {
 var twoSumMethod2 = function(nums, target){
   let hash = {};
   for (let i = 0; i < nums.length; i++){
-    if (o4[nums[i]] >= 0){
-      return [o4[nums[i]], i]
+    if (hash[nums[i]] >= 0){
+      return [hash[nums[i]], i]
     }
-    o4[target-nums[i]] = i
+    hash[target-nums[i]] = i
   }
 }
