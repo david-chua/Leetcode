@@ -27,6 +27,9 @@
 // -109 <= target <= 109
 // Only one valid answer exists.
 
+// Brute force: double for loops
+
+
 var twoSum = function(nums, target) {
     let hash = {};
     hash[nums[0]] = [nums[0], 0];
